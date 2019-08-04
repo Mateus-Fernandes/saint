@@ -261,7 +261,12 @@
         margin-top: 73px;
     }
     .arrow_v2 {
-        bottom: 1vh;
+        bottom: 46px;
+        width: 38px;
+        height: 38px;
+    }
+    .arrow_v2.descer{
+        bottom: 70px;
     }
     .secao_1 .more_bottom.more_left {
         right: -79px;
@@ -594,11 +599,70 @@
     }
     .pp-section {
         height: 100vh;
+        min-width: -webkit-fill-available;
+    }
+    .conforto_page .dentro_conforto .tab-content.current {
+        display: block;
+        column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-gap: 15px;
+    }
+    h4.small {
+        color: #FFF !important;
+        font-family: 'Gotham Bold';
+        font-size: 9px;
+    }
+    img.x80 {
+        width: 40px !important;
+    }
+    .conforto_page .dentro_conforto .texto_conforto ul li {
+        color: #FFF;
+        font-size: 12px;
+    }
+    .conforto_page .dentro_conforto table#matriz_sustentabilidade .skew a {
+        color: #12397C;
+        font-family: 'Gotham Bold';
+        transition: .3s;
+        text-transform: initial;
+        font-size: 7px;
+    }    
+    .conforto_page .dentro_conforto table#matriz_sustentabilidade .skew {
+
+        padding: 0px !important;
+    }
+    .conforto_page .conforto .dentro_conforto .texto_conforto {
+        padding-left: 4px;
+        padding-right: 4px;
+        justify-content: center !important;
+    }
+    .conforto .posi_v {
+        right: inherit;
+        top: 7vh;
+        left: -18px;
+    }
+    .popup-sustentabilidade {
+        position: relative;
+        background: #FFF;
+        padding: 20px;
+        width: 90%;
+        margin: 6px auto;
+    }
+    .modal-body {
+        padding: 20px 20px;
     }
     //Categorias page
     .categorias_page .conforto .dentro_conforto .texto_conforto p {
         padding-right: 0;
         max-height: inherit;
+    }
+    .conforto_page .dentro_conforto .tab-content.current {
+        display: block;
+        column-count: 1;
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-gap: 40px;
+        text-align: left !important;
     }
     .conforto_page .dentro_conforto .tabs_conforto .circulo_left {
         display: none;
