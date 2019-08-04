@@ -30,7 +30,7 @@
     .categorias_home .circulos_h {
         top: initial;
         left: 65px;
-        bottom: 158px;
+        bottom: 6px;
     }
     .categorias_home .saiba {
         margin-bottom: 40px;
@@ -48,7 +48,10 @@
         }
     }
     .regulamento .inner_box .dentro_regulamento h1 {
-        line-height: 118px;
+        line-height: 60px;
+    }
+    .regulamento .inner_box .dentro_regulamento .baixe_regulamento {
+        margin-top: 24px;
     }
     .como_foi .inner_box .dentro_como {
         padding-top: 27px;
@@ -141,6 +144,12 @@
     .secao_2 .right_dois {
         padding-right: 20px;
     }
+    .o_premio .categorias_opremio .cat_home .cada_cat .cat_items .item {
+        font-size: 19px;
+        color: #7F7F7F;
+        max-width: 340px;
+        margin-right: 30px;
+    }
 }
 
 @media screen and ( max-width: 1180px ) {
@@ -206,8 +215,10 @@
     }
  }
 
-
  @media screen and ( max-width: 500px ) {
+     body, html{
+         max-width: 100%;
+     }
     .mulher{
        display: none;
     }
@@ -312,6 +323,7 @@
     .categorias_home .rosto {
         top: 28vh;
         right: -131vw;
+        display: none;
     }
     .categorias_home .cat_home {
         position: relative;
@@ -321,10 +333,10 @@
     }
     .categorias_home .cat_home h1 {
         font-size: 29px;
-        letter-spacing: 0.5em;
+        letter-spacing: 0.3em;
     }
     .categorias_home .cat_home .cada_cat h2 {
-        font-size: 27px;
+        font-size: 25px;
         line-height: 28px;
     }
     .categorias_home .cat_home .cada_cat h3 {
@@ -388,7 +400,8 @@
     }
     .conforto .dentro_conforto .texto_conforto {
         padding-left: 27px;
-        padding-right: 50px;
+        padding-right: 30px;
+        justify-content: center !important;
     }
     .conforto .dentro_conforto .texto_conforto p {
         font-size: 14px;
@@ -415,6 +428,7 @@
         line-height: 16px;
         width: 143px;
         word-break: break-word;
+        font-size: 13px;
     }
     .conforto .more_bottom {
         right: initial;
@@ -434,12 +448,14 @@
         grid-template-rows: 45px 45px;
         grid-gap: 5px;
         margin-top: 13px;
-        padding-right: 22px;
+        padding-right: 0px;
+        padding-left: 0;
     }
     .regulamento .inner_box .dentro_regulamento h1 {
         line-height: 60px;
         font-size: 33px;
         letter-spacing: -0.1em;
+        padding-top: 24px;
     }
     .regulamento .inner_box .dentro_regulamento .lista_regulamento {
         margin: 0 0;
@@ -467,6 +483,52 @@
         position: absolute;
         right: -40px;
         bottom: 20px;
+        display: none;
+    }
+    .regulamento .circulos {
+        top: 70vh;
+    }
+    .empresas {
+        .slick-list {
+            margin: 0 50px;
+        }
+        .slick-slide img {
+            width: auto !important;
+        }
+        .slick-slide {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+        }
+        .slick-track {
+            display: flex;
+            align-items: center;
+        }
+        .slick-prev {
+            left: 0;
+        }
+        .slick-next {
+            right: 0;
+        }
+        .slick-next, .slick-prev {
+            width: 50px;
+            height: 50px;
+            background: #7F7F7F;
+            border-radius: 8px;
+            &:before {
+                font-family: 'icomoon' !important;
+                content: "\e903" !important;
+                display: inline-block;
+                opacity: 1 !important;
+            }
+        }
+        .slick-prev:before {
+            -webkit-transform: rotate(-180deg);
+            -moz-transform: rotate(-180deg);
+            -o-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+        }
     }
     .como_foi .inner_box .dentro_como .ebook {
         display: flex;
@@ -509,8 +571,292 @@
         color: #ffffff;
         margin: 0 auto;
         width: 90vw;
-        padding-left: 34px;
+        padding-left: 7px;
         position: relative;
-        bottom: 61px;
+        bottom: 27px;
+    }
+    .hamburger {
+    margin-right: 19px;
+    margin-left: 0px;
+    }
+    .social a {
+        margin-right: 11px;
+    }
+    .menu ul {
+        padding-right: 29px;
+        padding-left: 25px;
+    }
+    .pp-section {
+        height: 100vh;
+    }
+    //Categorias page
+    .categorias_page .conforto .dentro_conforto .texto_conforto p {
+        padding-right: 0;
+        max-height: inherit;
+    }
+    .conforto_page .dentro_conforto .tabs_conforto .circulo_left {
+        display: none;
+    }
+    .conforto_page .inscrevaBig {
+        width: 279px;
+    }
+    .inner_empresa {
+        padding: 20px 20px;
+        text-align: center;
+        height: auto;
+    }
+    .inner_empresa .texto_empresa a {
+        margin-right: 11px;
+    }
+    .empresa_impar .circulo_left {
+        display: none;
+    }
+    .empresa_par .circulos {
+        display: none;
+    }
+    .conforto_page {
+        padding-top: 42px;
+    }
+
+    //O premio
+    .o_premio .opremio_page .text_premio {
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .o_premio .opremio_page {
+        padding-top: 54px;
+    }
+    .o_premio .opremio_page .inner_box {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .o_premio .categorias_opremio .cat_home .cada_cat .descricao_cat p {
+        font-size: 17px;
+        padding-right: 30px;
+    }
+    .o_premio .categorias_opremio .cat_home .cada_cat .cat_items {
+        flex-wrap: wrap;
+    }
+    .o_premio .categorias_opremio .cat_home .cada_cat .categoria_academica_desc .desc_academica p {
+        font-size: 17px;
+        line-height: 24px;
+        color: #7F7F7F;
+        padding-right: 30px;
+    }
+    .o_premio .categorias_opremio .cat_home .cada_cat .categoria_academica_desc {
+        flex-wrap: wrap;
+        margin-top: 19px;
+    }
+    .o_premio .categorias_opremio .cat_home .cada_cat .categoria_academica_desc .projeto_academica {
+        padding: 34px 15px;
+        font-size: 17px;
+        margin-left: 0;
+    }
+    .o_premio .premios_page .content_premios_page .blocos_premios .item_bloco {
+        margin-bottom: 29px;
+    }
+    .o_premio .premios_page .content_premios_page .titulos_premios {
+        margin-top: 0;
+    }
+    .o_premio .premios_page .content_premios_page {
+        margin-bottom: 30px;
+    }
+    .calltoaction_premio .inner_box {
+        flex-wrap: wrap;
+    }
+    .o_premio .calltoaction_premio .call_left {
+        text-align: center;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 7px;
+        h2 {
+            margin-bottom: 5px;
+        }
+    }
+    .o_premio .calltoaction_premio .call_right {
+        height: 160px;
+    }
+    .o_premio .calltoaction_premio .call_right h2 {
+        font-size: 27px;
+        line-height: 36px;
+        margin-bottom: 0px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .o_premio .sect_inscreva_se {
+        padding-top: 0;
+    }
+    .o_premio .sect_inscreva_se a.botao {
+        margin-left: 0;
+    }
+    .o_premio .calltoaction_premio .circulos.circulo_left {
+        display: none;
+    }
+    .o_premio .calendario_page .calendario_items .cada_item_calendario {
+        padding-right: 0;
+    }
+    .o_premio .calendario_page .calendario_items .cada_item_calendario .data:before {
+        right: -12px;
+    }
+    .o_premio .calendario_page .calendario_items .cada_item_calendario .data:after {
+        right: -19px;
+    }
+    .o_premio .calendario_page .calendario_items {
+        padding-top: 46px;
+    }
+    .o_premio .calendario_page .calendario_items .cada_item_calendario .item_descricao {
+        padding-left: 12px;
+        padding-right: 4px;
+        font-size: 18px;
+    }
+    .o_premio .categorias_opremio .cat_home .cada_cat .cat_items .more_bottom {
+        right: -21px;
+    }
+    .o_premio .opremio_page .text_premio .read_more_text .d-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+        img {
+            margin-bottom: 20px;
+        }
+    }
+    .o_premio .categorias_opremio .circulos {
+        display: none;
+    }
+ }
+
+ @media (min-width: 320px) and (max-width: 350px) {
+    .arrow_v2 {
+        bottom: 1vh;
+        height: 30px;
+        width: 30px;
+    }
+    .footer .inner_box_grey {
+        padding: 3px 6px;
+        height: 33vh;
+        margin-bottom: 0vh;
+        margin-top: 1vh;
+    }
+    .conforto .dentro_conforto h2 {
+        font-size: 23px;
+    }
+    .conforto .dentro_conforto .tabs_conforto ul li {
+        width: 126px;
+    }
+    .conforto .dentro_conforto .texto_conforto p {
+        max-height: 31vh;
+    }
+    .seven {
+        left: -192vw;
+        top: 51%;
+    }
+    .text_right .premio span:nth-of-type(3) {
+        left: -36px;
+    }
+    .text_right .premio span:nth-of-type(2) {
+        font-size: 24px;
+        left: -19px;
+    }
+    .text_right .inspire {
+        letter-spacing: 0.24em;
+        line-height: 29px;
+        font-size: 19px;
+        padding-top: 7px;
+    }
+    .text_right .inscricoes {
+        margin-top: 26px;
+    }
+    .text_right .inscricoes .ate {
+        font-size: 43px;
+    }
+    .secao_2 .right_dois p {
+        font-size: 15px;
+        margin-bottom: 6px;
+        padding-left: 19px;
+    }
+    .secao_2 .right_dois .premiacoes {
+        padding: 15px 11px;
+        left: 0;
+    }
+    .secao_2 .right_dois .premiacoes h2 {
+        font-size: 17px;
+        line-height: 19px;
+    }
+    .texto_left span {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .texto_left .preco {
+        font-size: 51px;
+    }
+    .secao_2 .right_dois .premiacoes h3 {
+        margin-right: 5px;
+        font-size: 16px;
+    }
+    .secao_2 .right_dois {
+        padding-right: 0px;
+        padding-top: 13px;
+        padding-left: 0px;
+    }
+    .secao_2 .right_dois .inscreva {
+        margin-top: -14px;
+        padding-left: 72px;
+        z-index: 9999;
+        position: relative;
+    }
+    .categorias_home .cat_home .cada_cat ul li {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .categorias_home .cat_home .cada_cat {
+        margin-bottom: 30px;
+        margin-top: 11px;
+        &:last-of-type {
+            margin-bottom: 20px;
+        }
+    }
+    .regulamento .inner_box .dentro_regulamento h1 {
+        font-size: 29px;
+        letter-spacing: -0.1em;
+    }
+    .regulamento .inner_box .dentro_regulamento .lista_regulamento ul li {
+        font-size: 13px;
+        line-height: 13px;
+    }
+ }
+ @media only screen 
+ and (device-width : 375px) 
+ and (device-height : 812px) 
+ and (-webkit-device-pixel-ratio : 3) { 
+    .logo {
+        top: -8vh;
+    }
+    .text_right .premio {
+        margin-top: 138px;
+    }
+    .secao_2 .right_dois .premiacoes {
+        padding: 15px 12px;
+        margin-top: 56px;
+    }
+    .secao_2 .right_dois p {
+        font-size: 18px;
+    }
+    .regulamento .inner_box .dentro_regulamento .lista_regulamento ul {
+        grid-template-rows: 60px 60px;
+    }
+    .regulamento .inner_box .dentro_regulamento .lista_regulamento ul li {
+        height: 59px;
+    }
+    .footer .inner_box_grey p {
+        font-size: 14px;
+    }
+ }
+
+ @media screen and (min-width: 1024px){
+    .categorias_home .saiba {
+        width: 210px;
+        position: relative;
+        z-index: 10;
+        margin-right: 200px;
     }
  }

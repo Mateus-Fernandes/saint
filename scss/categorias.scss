@@ -31,15 +31,67 @@
     .dentro_conforto {
         .tabs_conforto {
             padding-right: 108px;
+            ul{
+                li{
+                    width: 350px;
+                }
+            }
+        }
+       .tab-content.current {
+            display: block;
+            column-count: 2;
+            column-gap: 40px;
         }
         .texto_conforto {
-            padding-right: 0;
+            padding-right: 81px;
             p {
-                margin-bottom: 32px;
+                margin-bottom: 18px;
                 overflow: inherit;
                 max-height: initial;
             }
+            ul{
+                li{
+                    color: #FFF;
+                    font-size: 18px;
+                }
+            }
         }
+        div#tab-6 {
+            column-count: 1;
+        }
+
+        table#matriz_sustentabilidade{
+            img {
+                width: 70px;
+            }
+            .popup-sustentabilidade {
+                position: relative;
+                background: #FFF;
+                padding: 20px;
+                width: 25%;
+                margin: 20px auto;
+            }
+            .skew {  
+                background: #fff;
+                position: relative;
+                min-height: 120px;
+                -webkit-box-shadow: 2px 2px 41px -12px rgba(0,0,0,0.3);
+                -moz-box-shadow: 2px 2px 41px -12px rgba(0,0,0,0.3);
+                box-shadow: 2px 2px 41px -12px rgba(0,0,0,0.3);
+                z-index: 2;
+                border-radius: 5px;
+                a{
+                    color: #12397C;
+                    font-family: 'Gotham Bold';
+                    transition: .3s;
+                    text-transform: initial;
+                    &:hover{
+                        color: #c81316;
+                    }
+                }
+            }
+        }
+        
     }
 
 }
@@ -140,7 +192,7 @@
     right: inherit;
     left: 99px;
     bottom: inherit;
-    top: 32vh;
+    top: 10vh;
 }
 .conforto_page .dentro_conforto .tabs_conforto  .middle_more {
     top: 95vh;
@@ -155,4 +207,30 @@
 .conforto_page .more_top {
     bottom: initial;
     top: 62vh;
+}
+
+img.x80 {
+    width: 80px;
+}
+
+.popup-sustentabilidade {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: 25%;
+    margin: 20px auto;
+}
+.sustentabilidade_item_txt {
+    font-size: 1em;
+    color: #000;
+    line-height: 1.2em;
+}
+
+h4.small {
+    color: #FFF !important;
+    font-family: 'Gotham Bold';
+    font-size: 15px;
+    a{
+        color: #FFF;
+    }
 }

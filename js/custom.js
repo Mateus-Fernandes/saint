@@ -6,6 +6,22 @@ $(".closer").click(function()
 {
     $(".menu").removeClass("open_menu");
 });
+
+$(document).mouseup(function (e) {
+  var popup = $(".menu");
+  if (!$('.menu').is(e.target) && !popup.is(e.target) && popup.has(e.target).length == 0) {
+      $(".menu").removeClass("open_menu");
+  }
+  $(".hamburger").click(function()
+  {
+      $(".menu").toggleClass("open_menu");
+  });
+});
+
+$(".menu a").click(function()
+{
+    $(".menu").removeClass("open_menu");
+});
 $(document).ready(function() {
   
   $("#premio_read").click(function() {
@@ -21,7 +37,11 @@ $(document).ready(function() {
       $(".read_more_text").slideUp();
     }
   });
-  
+
+
+
+
+
   $("a.link_page").click(function() {
     $link = $(this).attr("href");
     $("body").fadeOut(200);
@@ -55,6 +75,7 @@ $(document).ready(function() {
         anchors: ['secao_1', 'secao_2', 'categorias_home', 'conforto', 'regulamento', 'como_foi', 'footer'],
         menu: '#MenuLinks',
         scrollingSpeed: 300,
+        normalScrollElements: '#scroll',
         onLeave: function(index, nextIndex, direction){
             if(index == 1 && direction =='down'){
 				$('.mulher').addClass('to_left');
@@ -92,7 +113,7 @@ $(document).ready(function() {
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,
@@ -129,4 +150,10 @@ $(document).ready(function() {
     $.get( url, function( data ) {
       $( "#resultModal" ).html( data );
     });
-  })
+  });
+
+  /*MODAIS*/
+$('.open-popup-link').magnificPopup({
+  type:'inline',
+  midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+});
