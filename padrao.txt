@@ -1,0 +1,9 @@
+    <svg class="icon-more">
+    <use xlink:href="#more"></use>
+    </svg>
+    <svg class="icon-vertical">
+    <use xlink:href="#vertical"></use>
+    </svg>
+    <svg class="icon-horizontal">
+    <use xlink:href="#horizontal"></use>
+    </svg>

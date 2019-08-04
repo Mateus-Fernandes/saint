@@ -1,0 +1,41 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.614 55.371" id="more">
+    <defs>
+      <clipPath id="a">
+        <path fill="none" d="M0 0h61.614v55.371H0z"></path>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#a)">
+      <path d="M57.491 25.439v8.1H35.654v21.836h-11.7v-21.84H2.118v-8.1zm.777-3.603v3.047H2.893v-3.047h21.836v-3.07h1.922v-5.227h-1.922V-.001h11.7v21.836z"></path>
+      <path d="M58.046 25.439v8.1H36.209v21.836h-11.7v-21.84H2.673v-8.1zm.783-3.603v3.047H3.457v-3.047h21.836v-3.07h1.365v-5.227h-1.365V-.001h11.7v21.836z"></path>
+      <path d="M58.602 25.439v8.1H36.764v21.836h-11.7v-21.84H3.234v-8.1zm.779-3.603v3.047H4.01v-3.047h21.836v-3.07h.81v-5.227h-.81V-.001h11.7v21.836z"></path>
+      <path d="M58.046 25.439v8.1H36.209v21.836h-11.7v-21.84H2.673v-8.1zm.783-3.603v3.047H3.457v-3.047h21.836v-3.07h1.365v-5.227h-1.365V-.001h11.7v21.836z"></path>
+      <path d="M0 31.223h16.238v1.075H0zm44.487-.556h15.348v1.26H44.487zm-14.683 5.931h7.899v2.892h-7.899zm-25.689-4.3h13.42v.297H4.115zM.797 30.296h3.874v.927H.797zm4.134 0h.204v.927h-.204zm.454 0h.76v.927h-.76zm17.044 9.194h11.789v.371H22.429zm16.682-15.051h22.503v.445H39.111zM23.17 40.406h10.01v3.978H23.17z"></path>
+      <path d="M22.651 40.676h9.898v.89h-9.898zm11.102-.27h4.283v3.978h-4.283zm-5.578 4.274h10.936v.741H28.175zm-2.632 1.78h1.112v1.112h-1.112zm3.485-10.974h.776v.776h-.776zm9.008 1.112h1.075v2.892h-1.075zm-5.487-10.676h13.309v1.186H32.549zm13.967 0h.5v1.186h-.5zm.807 0h.195v1.186h-.195zm-43.87-.705h13.859v.371H3.453zm31.58-11.677h3.54v5.227h-3.54zm-8.174 0h.074v5.227h-.074zm-1.316-.798h.463v.463h-.463zm-.658 25.793h.658v.658h-.658zm-8.647-8.239h.927v.927h-.927z"></path>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 49" id="vertical">
+    <defs>
+      <clipPath id="a">
+        <path fill="none" d="M0 0h11v49H0z"></path>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#a)">
+      <circle cx="5.5" cy="5.5" r="5.5"></circle>
+      <circle cx="5.5" cy="5.5" r="5.5" transform="translate(0 19)"></circle>
+      <circle cx="5.5" cy="5.5" r="5.5" transform="translate(0 38)"></circle>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 11" id="horizontal">
+    <defs>
+      <clipPath id="a">
+        <path fill="none" d="M0 0h11v49H0z"></path>
+      </clipPath>
+    </defs>
+    <g transform="rotate(90 24.5 24.5)" clip-path="url(#a)">
+      <circle cx="5.5" cy="5.5" r="5.5"></circle>
+      <circle cx="5.5" cy="5.5" r="5.5" transform="translate(0 19)"></circle>
+      <circle cx="5.5" cy="5.5" r="5.5" transform="translate(0 38)"></circle>
+    </g>
+  </symbol>
+</svg>

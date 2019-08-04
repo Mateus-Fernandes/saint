@@ -1,0 +1,148 @@
+.conforto_page {
+    max-height: initial;
+    overflow: inherit;
+    background: none;
+    .inner_box {
+        height: inherit;
+        overflow: hidden;
+        &:after {
+            background-image: url('../images/categorias/bg_cat_page.png');
+        }
+    }
+    .inscrevaBig {
+        display: flex;
+        width: 426px;
+        height: 62px;
+        justify-content: center;
+        align-items: center;
+        font-size: 21px;
+        color: #12397C;
+        background: #FFF;
+        border-radius: 5px;
+        font-family: 'Gotham Bold';
+        text-transform: uppercase;
+        margin-bottom: 39px;
+        margin-top: 21px;
+        &:hover {
+            background: #12397C;
+            color: #FFF;
+        }
+    }
+    .dentro_conforto {
+        .tabs_conforto {
+            padding-right: 108px;
+        }
+        .texto_conforto {
+            padding-right: 0;
+            p {
+                margin-bottom: 32px;
+                overflow: inherit;
+                max-height: initial;
+            }
+        }
+    }
+
+}
+.categorias {
+    background: #B6DAF4;
+    background: linear-gradient(91deg, #B6DAF4 0%, #EADFF0 100%);
+    .footer {
+        background: url('../images/categorias/bg_footer.png') bottom center;
+    }
+}
+
+.inner_empresa {
+    margin-bottom: 60px;
+    margin-top: inherit;
+    padding: 52px 100px;
+    height: initial;
+    svg {
+        fill: #ca9c7f;
+    }
+    &:after {
+        background: #FFF;
+        opacity: 1;
+    }
+    .row {
+        z-index: 10;
+    }
+    .logo_empresa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {width: 230px;}
+    }
+    .texto_empresa {
+        h3 {
+            color: #12397C;
+            font-size: 20px;
+            line-height: 19px;
+            margin-bottom: 26px;
+            font-family: 'Gotham Black Regular';
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 16px;
+            line-height: 19px;
+            color: #12397C;
+            margin-bottom: 20px;
+            &:last-child {
+                text-transform: uppercase;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.empresa_impar {
+    .circulo_left {
+        left: 111px;
+        bottom: 27px;
+    }
+    .more_bottom {
+        position: absolute;
+        right: -30px;
+        bottom: 30px;
+    }
+    .circulos_h {
+        position: absolute;
+        top: 4px;
+        left: 32vw;
+    }
+}
+
+.empresa_par {
+    .circulos_h {
+        position: absolute;
+        top: 4px;
+        left: 32vw;
+    }
+    .more_left {
+        bottom: initial;
+        top: -29px;
+    }
+    .circulos {
+        right: 34px;
+    }
+}
+
+.conforto_page .dentro_conforto .tabs_conforto .circulo_left {
+    right: inherit;
+    left: 99px;
+    bottom: inherit;
+    top: 32vh;
+}
+.conforto_page .dentro_conforto .tabs_conforto  .middle_more {
+    top: 95vh;
+    right: 50%;
+    transform: translateX(-50%);
+}
+.conforto_page .more_bottom {
+    right: initial;
+    left: -27px;
+    bottom: 135px;
+}
+.conforto_page .more_top {
+    bottom: initial;
+    top: 62vh;
+}

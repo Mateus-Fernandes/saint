@@ -1,0 +1,577 @@
+
+.o_premio{
+    svg{
+        fill: #ca9c7f !important;
+    }
+    background: rgb(238,226,208);
+    background: linear-gradient(89deg, rgba(238,226,208,1) 0%, rgba(248,231,215,1) 100%);  
+    overflow: inherit;
+    .opremio_page{
+        padding-top: 145px;
+        .inner_box{
+            padding-left: 96px;
+            padding-right: 45px;
+        }
+        .text_premio{
+            height: auto;
+            &:after{
+                background: transparent;
+            }
+            .paragrafo_premio{
+                position: relative;
+                z-index: 3;
+            }
+            p{
+                font-size: 20px;
+                text-align: left;
+                color: #12397C;
+                line-height: 24px;
+                font-family: 'Gotham Book';
+            }
+            a.button_readmore{
+                display: block;
+                width: 327px;
+                height: 48px;
+                border: 2px solid #12397C;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                color: #12397C;
+                text-transform: uppercase;
+                font-family: 'Gotham Bold';
+                font-size: 20px;
+                margin-top: 16px;
+                text-decoration: none;
+                transition: .3s;
+                &:hover{
+                    background: #12397C;
+                    color: #FFF;
+                    text-decoration: none;
+                }
+                i{
+                    transform: rotate(90deg);
+                    font-size: 16px;
+                    margin-left: 13px;
+                    margin-top: 2px;
+                    transition: .3s;
+                }
+            }
+            a.button_readmore.expandido{
+                i{
+                    transform: rotate(-90deg)
+                }
+            }
+            .read_more_text{
+                transition: .3s;
+                img{
+                    margin-right: 20px;
+                    height: fit-content;
+                    margin-top: 20px;
+                }
+            }
+            .circulos{
+                top: 0vh;
+            }
+            .more_left {
+                right: initial;
+                left: -30px;
+                top: -20vh;
+            }
+        }
+    } 
+    .categorias_opremio{
+        background-image: linear-gradient(91deg, #eee2d0 0%, #f8e7d7 100%);
+        .inner_box{
+            height: auto;
+        }
+        .cat_home{
+            position: relative;
+            z-index: 10;
+            padding-left: 0px;
+            padding-top: 50px;
+            .rosto{
+                position: absolute;
+                top: 22vh;
+                right: -450px;
+                z-index: 10;
+            }
+            .cada_cat{
+                &:last-of-type{
+                    margin-bottom: 45px;
+                }
+                .descricao_cat{
+                    width: 356px;
+                    position: relative;
+                    .circulos_h{
+                        top: 22px;
+                        left: unset;
+                        right: -100px;
+                    }   
+                    p{
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #7F7F7F;
+                    }
+                }
+                .cat_items{
+                    background: #efe6da;
+                    padding-top: 24px;
+                    padding-left: 19px;
+                    padding-right: 19px;
+                    padding-bottom: 34px;
+                    margin-top: 32px;
+                    border-radius: 5px;
+                    position: relative;
+                    .more_bottom{
+                        top: -4vh;
+                        right: 26vw;
+                    }     
+                    .circulos_h{
+                        bottom: -10px;
+                        left: 26vw;
+                    }               
+                    .item{
+                        font-size: 19px;
+                        color: #7F7F7F;
+                        max-width: 340px;
+                        strong{
+                            text-transform: uppercase;
+                            color: #c81316;
+                            font-family: 'Gotham Bold';
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .categoria_academica_desc{
+                    margin-top: 50px;
+                    .desc_academica{
+                        min-width: 356px;
+                        max-width: 356px;
+                        p{
+                            font-size: 20px;
+                            line-height: 24px;
+                            color: #7F7F7F;
+                        }
+                    }
+                    .projeto_academica{
+                        padding: 34px 17px;
+                        background: #EFE8DD;
+                        border-radius: 5px;
+                        color: #7F7F7F;
+                        font-size: 20px;
+                        margin-left: 80px;
+                        position: relative;
+                        .more_bottom{
+                            top: -29px;
+                            right: -25px;
+                            left: unset;
+                        }
+                        strong{
+                            text-transform: uppercase;
+                            color: #12397C;
+                            font-family: 'Gotham Bold';
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+            }
+        }
+        .more_bottom{
+            top: 10vh;
+        }
+        .more_bottom.more_left{
+            top: 30vh;
+        }        
+        .circulos{
+            right: 33vw;
+        }
+        .circulos.circulo_left{
+            top: 60vh;
+            left: 6px;
+        }
+        .circulos.circulo_left.circuloadd{
+            bottom: 35vh;
+            top: unset;
+        }
+    } 
+    .premios_page {
+        background-image: linear-gradient(91deg, #eee2d0 0%, #f8e7d7 100%);
+        background-position: 0vw -31vh;
+        .inner_box{
+            height: auto;
+        }
+        .inner_box:after {
+            background: #dbd3c9;
+            background: url(../images/opremio/bg_premios.png), linear-gradient(270deg, #B6DAF4 0%, #EADFF0 100%);
+            opacity: .25;
+        }      
+        .content_premios_page{
+            margin-bottom: 140px;
+            &:last-child{
+                margin-bottom: 70px;
+            }
+            .titulos_premios{
+                margin-top: 63px;
+                h2{
+                    font-size: 30px;
+                    line-height: 40px;
+                    color: #12397C;
+                    text-transform: uppercase;
+                    font-family: 'Gotham Medium';
+                    margin-bottom: 10px;
+                }
+                h2.titleRed{
+                    color: rgba(200, 19, 22, 1);
+                }
+                h3{
+                    font-size: 20px;
+                    color: #12397C;
+                    font-family: 'Gotham Book';
+                    text-transform: uppercase;
+                    margin-bottom: 50px;
+                    span{
+                        font-family: 'Gotham Bold';
+                        color: #C81316;
+                    }
+                }
+                h3.inverseRed{
+                    color: rgba(200, 19, 22, 1);
+                    span{
+                        color: rgba(18, 57, 124, 1);
+                    }
+                }
+            }
+            .blocos_premios{
+                position: relative;
+                .more_bottom{
+                    top: 0;
+                    left: 0;
+                }
+                .item_bloco{
+                    background: linear-gradient(180deg, rgba(238, 226, 208, 0.75) 0%, rgba(248, 231, 215, 0.75) 100%);
+                    box-shadow: 0px 3px 6px rgba(27, 113, 165, 0.15);
+                    border-radius: 5px;
+                    text-align: center;
+                    padding: 39px 40px;
+                    position: relative;
+                    h4{
+                        font-size: 20px;
+                        font-family: 'Gotham Black Regular';
+                        line-height: 24px;
+                        margin-bottom: 39px;
+                        color: rgba(18, 57, 124, 1);
+                        text-transform: uppercase;
+                    }
+                    .premio{
+                        font-size: 20px;
+                        color: #12397C;
+                        line-height: 21px;
+                        font-family: 'Gotham Bold';
+                        small{
+                            font-family: 'Gotham Book';
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #12397C;
+                        }
+                    }
+                    p{
+                        color: rgba(127, 127, 127, 1);
+                        font-size: 12px;
+                        font-family: 'Gotham Book';
+                        line-height: 15px;
+                        margin-top: 20px;
+                    }
+                    .circulo_left{
+                        top: 5px;
+                        left: -5px;
+                        right: unset;
+                    }
+                    .circulos_h{
+                        bottom: -39px;
+                        left: 55px;
+                    }
+                    .more_bottom{
+                        right: -34px;
+                        left: unset;
+                        top: -7px;
+                    }
+                    .more_bottom.more_left{
+                        top: unset;
+                        right: unset;
+                        left: -34px;
+                        bottom: -21px;
+                    }
+                    .more_bottom.moreadd{
+                        top: unset;
+                        bottom: 20px;
+                    }
+                }
+            }
+            .blocos_premios.inverse{
+                h4{
+                    color: rgba(200, 19, 22, 1);
+                }
+                .premio{
+                    color: rgba(200, 19, 22, 1);
+                    font-family: 'Gotham Book';
+                    small{
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: rgba(200, 19, 22, 1);
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }  
+        .destaques_sect{
+            .titulos_premios{
+                h3{
+                    span{
+                        font-family: 'Gotham Book';
+                    }
+                }
+            }
+            .item_bloco{
+                min-height: 242px;
+                .premio{
+                    font-size: 20px;
+                    color: rgba(18, 57, 124, 1);
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    margin-bottom: 28px;
+                    min-height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                h4{
+                    margin-bottom: 0 !important;
+                }
+                .circulos_h.circulos_hadd{
+                    top: -14px;
+                    left: -3px;
+                    right: unset;
+                }
+                .more_bottom.moreadd{
+                    bottom: -25px !important;
+                    right: 19px;
+                }
+
+            }
+            .item_bloco.blueBlock{
+                .premio{
+                    color: rgba(18, 57, 124, 1) !important;
+                }
+                h4{
+                    color: rgba(18, 57, 124, 1) !important;
+                }
+                .more_bottom{
+                    right: 5vw;
+                    top: -27px;
+                }
+                .circulos_h{
+                    bottom: -9px;
+                    top: unset;
+                    right: 26px;
+                    left: unset;
+                }
+            }
+            .item_bloco.redBlock{
+                .premio{
+                    color: rgba(200, 19, 22, 1) !important;
+                }
+                h4{
+                    color: rgba(200, 19, 22, 1) !important;
+                }
+                .circulos_h{
+                    left: unset;
+                    right: 14px;
+                }
+            }
+        }
+    }
+    .calltoaction_premio {
+        background: rgba(127, 127, 127, 0.15);
+        background-position: 0vw -31vh;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        .inner_box{
+            height: auto;
+        }
+        .inner_box:after {
+            background: transparent !important;
+            opacity: .25;
+        }  
+        .call_left{
+            text-align: center;
+            width: 277px;
+            margin-right: 100px;
+            position: relative;
+            z-index: 3;
+            h2{
+                font-size: 30px;
+                color: rgba(18, 57, 124, 1);
+                font-family: 'Gotham Bold';
+                line-height: 40px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+            small{
+                font-size: 12px;
+                color: rgba(18, 57, 124, 1);
+                line-height: 15px;
+            }
+        }
+        .call_right{
+            text-align: center;
+            background-image: url(../images/opremio/block.svg);
+            background-repeat: no-repeat;
+            height: 342px;
+            width: 471px;
+            position: relative;
+            z-index: 3;
+            background-position: top;     
+            h2{
+                color: #FFF;
+                font-size: 40px;
+                font-family: 'Gotham Bold';
+                line-height: 48px;
+                margin-bottom: 41px;
+                margin-left: -35px;
+            }
+            small{
+                font-size: 12px;
+                color: #FFF;
+                line-height: 15px;
+                margin-left: -35px;
+            }
+        }
+        .more_left {
+            right: initial;
+            left: 14vw;
+            top: -7px;
+        }
+        .circulos.circulo_left {
+            left: 41vw;
+            bottom: 108px;
+        }
+    }   
+    .sect_inscreva_se{
+        padding-top: 60px;
+        .inner_box{
+            height: auto;
+            margin-top: 40px;
+        }
+        .inner_box:after {
+            background: transparent !important;
+            opacity: .25;
+        }  
+        a.botao{
+            height: 62px;
+            width: 426px;
+            font-size: 25px;
+            position: relative;
+            z-index: 3;
+            margin-left: 76px;
+        }
+        .circulos.circulo_left{
+            top: -23px;
+            bottom: unset;
+            left: 99px;
+        }
+    } 
+    .calendario_page{
+        background-image: unset;
+        padding-bottom: 1px;
+        .circulos.circulo_left{
+            top: -23px;
+            bottom: unset;
+            left: 99px;
+        }
+        .cat_home {
+            position: relative;
+            z-index: 10;
+            padding-left: 0;
+            padding-top: 70px;
+            
+        }
+        .inner_box{
+            height: auto;
+        }
+        .inner_box:after {
+            background: transparent !important;
+            opacity: .25;
+        }   
+        .calendario_items{
+            padding-top: 85px;
+            .cada_item_calendario{
+                padding-right: 231px;
+                margin-bottom: 45px;
+                .data{
+                    position: relative;
+                    &:after{
+                        content: '';
+                        background: #12397C;
+                        position: absolute;
+                        width: 15px;
+                        height: 15px;
+                        right: 8px;
+                        border-radius: 100%;
+                    }
+                    &:before{
+                        content: '';
+                        width: 1px;
+                        height: 140%;
+                        background: #12397C;
+                        position: absolute;
+                        right: 15px;
+                        margin-top: 15px;
+                    }                    
+                    span.strong{
+                        font-family: 'Gotham Black Regular';
+                        color: #12397C;
+                        font-size: 52px;
+                        line-height: 62px;
+                    }
+                    span{
+                        color: #12397C;
+                        line-height: 31px;
+                        font-size: 26px;
+                    }
+                }
+                .item_descricao {
+                    width: 100%;
+                    background: #fFF;
+                    padding-left: 40px;
+                    display: flex;
+                    align-items: center;
+                    padding-top: 34px;
+                    padding-bottom: 34px;
+                    border-radius: 10px;
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-family: 'Gotham Bold';
+                    text-transform: uppercase;
+                    color: #12397C;
+                    flex-direction: column;
+                    align-items: start;
+                    padding-right: 20px;
+                    transition: .3s;
+                    &:hover{
+                        background: rgba(255, 255, 255, 0.5);
+                    }
+                    small{
+                        color: #12397C;
+                        font-family: 'Gotham Book';
+                        font-size: 14px;
+                        line-height: 16px;
+                        text-transform: lowercase;
+                    }
+                }                
+            }
+        }       
+    }
+}

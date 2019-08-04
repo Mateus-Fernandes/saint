@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="904.02" height="277.11" viewBox="0 0 904.02 277.11">
+  <defs>
+    <linearGradient id="linear-gradient" x1="130.41" y1="187.46" x2="131.08" y2="188.46" gradientTransform="matrix(219.86, 0, 0, -277.11, -27948.46, 52247.4)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0078ef"/>
+      <stop offset="0.52" stop-color="#bd3a43"/>
+      <stop offset="1" stop-color="#ff5700"/>
+    </linearGradient>
+  </defs>
+  <title>Asset 5</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <path d="M0,.23H829.31V21H0Z" style="fill: #f2510d"/>
+        <path d="M684.16,277.11,808.24,11l21.26,9.91L707.44,277.11ZM837.65,87.91V77.71h66.26v10.2Zm20.23-24a33.24,33.24,0,1,1,12.9,2.6,32.86,32.86,0,0,1-12.9-2.6Zm-9-30.53a21.92,21.92,0,1,0,21.92-21.92A21.91,21.91,0,0,0,848.86,33.36Z" style="fill: url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

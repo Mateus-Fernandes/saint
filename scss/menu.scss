@@ -1,0 +1,82 @@
+.menu {
+    background: #FFF;
+    display: inline-block;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-top: 70px;
+    right: -100%;
+    z-index: 25;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    ul {
+        flex-direction: column;
+        list-style: none;
+        padding-right: 57px;
+        padding-left: 50px;
+        li {
+            display: flex;
+            height: 70px;
+            align-items: center;
+            text-align: right;
+            a {
+                display: flex;
+                padding: 10px 18px;
+                font-family: 'Gotham Book';
+                text-transform: uppercase;
+                color: #7F7F7F;
+                font-size: 16px;
+                border-radius: 5px;
+            }
+            .insc {
+                border: 2px solid;
+            }
+        }
+    }
+    .social {
+        position: absolute;
+        bottom: 6vh;
+        z-index: 6;
+        left: 68px;
+    }
+    .closer {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background: rgb(220,209,190);
+        background: linear-gradient(180deg, #EEE2D0 0%, #F8E7D7 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 15px;
+        left: 61px;
+        cursor: pointer;
+        span {
+            background: #FFF;
+            width: 20px;
+            height: 2px;
+            display: flex;
+            transform: rotate(45deg);
+        &:last-of-type {
+            transform: rotate(-45deg);
+            margin-top: -2px;
+        }
+        }
+    }
+}
+.open_menu {
+    right: 0;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.menu.blue .closer {
+    background: #B6DAF4 !important;
+}
