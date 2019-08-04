@@ -729,6 +729,12 @@
     .o_premio .categorias_opremio .circulos {
         display: none;
     }
+    .menu ul li {
+        display: flex;
+        height: 55px;
+        align-items: center;
+        text-align: right;
+    }
  }
 
  @media (min-width: 320px) and (max-width: 370px) {
