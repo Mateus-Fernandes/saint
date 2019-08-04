@@ -225,29 +225,32 @@
     }
     .seven {
         left: -162vw;
-        top: 41%;
+        top: 46%;
         svg{
             height: 202px
         }
     }
     .circulos {
-        top: 36vh;
+        top: 45vh;
     }
     .inner_box {
         position: relative;
         width: 90vw;
         height: 90vh;
         margin: 0 auto;
-        margin-top: 9vh;
-        margin-bottom: 1vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
         border-radius: 10px;
     }
     .secao_1 .more_bottom {
         right: -17px;
-        bottom: 152px;
+        bottom: 94%;
     }
     .text_right .inscricoes {
-        margin-top: 90px;
+        margin-top: 73px;
+    }
+    .arrow_v2 {
+        bottom: 1vh;
     }
     .secao_1 .more_bottom.more_left {
         right: -79px;
@@ -256,7 +259,8 @@
     }
     .texto_left {
         width: 100%;
-        left: 26px;
+        left: 8px;
+        padding-top: 55px;
         span{
             font-size: 30px;
             text-transform: uppercase;
@@ -267,10 +271,15 @@
             font-size: 59px;
         }        
     }
+    .secao_2{
+        .circulos_h{
+            display: none;
+        }
+    }
     .secao_2 .right_dois {
         padding-right: 10px;
         padding-top: 13px;
-        padding-left: 26px;
+        padding-left: 11px;
         p{
             font-size: 16px;
             margin-bottom: 6px;
@@ -382,4 +391,20 @@
         top: initial;
         bottom: 64px;
     }
+    .conforto .dentro_conforto .tabs_conforto ul{
+        margin-top: 13px;
+    }
+
+    .regulamento .inner_box .dentro_regulamento h1 {
+        line-height: 60px;
+        font-size: 33px;
+        letter-spacing: -0.1em;
+    }
+    .regulamento .inner_box .dentro_regulamento .lista_regulamento {
+        margin: 0 0;
+    }
+    .regulamento .inner_box .dentro_regulamento .lista_regulamento ul {
+        grid-template-areas: "li li";
+    }
+
  }
