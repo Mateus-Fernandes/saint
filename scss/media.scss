@@ -278,10 +278,10 @@
         left: 8px;
         padding-top: 20px;
         span{
-            font-size: 30px;
+            font-size: 26px;
             text-transform: uppercase;
             color: #12397C;
-            line-height: 29px;
+            line-height: 23px;
         }
         .preco {
             font-size: 59px;
@@ -323,8 +323,9 @@
         display: none;
     }
     .secao_2 .right_dois .inscreva {
-        margin-top: 9px;
+        margin-top: -7px;
         padding-left: 72px;
+        position: relative;
     }
     .categorias_home .rosto {
         top: 28vh;
@@ -369,11 +370,11 @@
         margin-top: 13px;
     }
     .categorias_home .cat_home .cada_cat {
-        margin-bottom: 48px;
-        margin-top: 39px;
+        margin-bottom: 27px;
+        margin-top: 20px;
     }
     .categorias_home .cat_home .cada_cat:last-of-type {
-        margin-bottom: 47px;
+        margin-bottom: 22px;
     }
     .categorias_home .circulos_h{
         display: none;
@@ -396,7 +397,7 @@
         margin-bottom: 14px;
     }
     .conforto .dentro_conforto .texto_conforto .saiba_mais {
-        height: 38px;
+        height: 32px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -478,17 +479,23 @@
     .regulamento .inner_box .dentro_regulamento .lista_regulamento ul li {
         width: 100%;
         display: flex;
-        height: 55px;
+        height: 40px;
         border: 2px solid #12397C;
         color: #12397C;
         border-radius: 5px;
         font-family: 'Gotham Book';
-        font-size: 16px;
+        font-size: 12px;
         align-items: center;
         justify-content: center;
         cursor: pointer;
         text-align: center;
         line-height: 15px;
+    }
+    .regulamento .inner_box .dentro_regulamento .baixe_regulamento {
+        margin-top: 27px;
+    }
+    .tab-content p {
+        max-height: 31vh;
     }
     .regulamento .more_bottom {
         position: absolute;
@@ -567,7 +574,7 @@
         padding: 14px 5px;
     }.footer .inner_box_grey {
         padding: 3px 6px;
-        height: 30vh;
+        height: 28vh;
         margin-bottom: 4vh;
     }.footer .inner_box_grey h3 {
         margin-bottom: 3px;
@@ -584,7 +591,7 @@
         width: 90vw;
         padding-left: 7px;
         position: relative;
-        bottom: 27px;
+        bottom: -3px;
     }
     .hamburger {
     margin-right: 19px;
@@ -799,8 +806,20 @@
         align-items: center;
         text-align: right;
     }
+    .secao_2 .right_dois .premiacoes .more_bottom {
+        bottom: initial;
+        top: -32px;
+        right: inherit;
+        left: -31px;
+        display: none;
+    }
  }
-
+ @media (min-width: 390px) and (max-width: 420px) {
+    .seven{
+        left: -143vw;
+        top: 43%;
+    }
+}
  @media (min-width: 320px) and (max-width: 370px) {
     .arrow_v2 {
         bottom: 1vh;
@@ -809,7 +828,7 @@
     }
     .footer .inner_box_grey {
         padding: 3px 6px;
-        height: 33vh;
+        height: 32vh;
         margin-bottom: 0vh;
         margin-top: 1vh;
     }
@@ -885,10 +904,10 @@
         line-height: 19px;
     }
     .categorias_home .cat_home .cada_cat {
-        margin-bottom: 30px;
-        margin-top: 11px;
+        margin-bottom: 27px;
+        margin-top: 20px;
         &:last-of-type {
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
     }
     .regulamento .inner_box .dentro_regulamento h1 {
