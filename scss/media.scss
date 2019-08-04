@@ -260,7 +260,7 @@
     .texto_left {
         width: 100%;
         left: 8px;
-        padding-top: 55px;
+        padding-top: 20px;
         span{
             font-size: 30px;
             text-transform: uppercase;
@@ -270,6 +270,10 @@
         .preco {
             font-size: 59px;
         }        
+    }
+    .secao_2 .right_dois .premiacoes h2 {
+        font-size: 19px;
+        margin-bottom: 0px;
     }
     .secao_2{
         .circulos_h{
@@ -287,6 +291,16 @@
     }
     .secao_2 .right_dois .premiacoes {
         padding: 15px 12px;
+    }
+    .secao_2 .right_dois .premiacoes h3 {
+        font-family: 'Gotham Book';
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 20px;
+        color: #12397C;
+        text-transform: uppercase;
+        margin-right: 23px;
+        position: relative;
     }
     .secao_2 .circulos.posi_v {
         display: none;
@@ -315,10 +329,10 @@
     }
     .categorias_home .cat_home .cada_cat h3 {
         color: #12397C;
-        font-size: 26px;
-        line-height: 37px;
+        font-size: 22px;
+        line-height: 31px;
         font-family: 'Gotham Book';
-        margin-bottom: 29px;
+        margin-bottom: 5px;
     }
     .categorias_home .more_bottom.more_left {
         display: none;
@@ -332,7 +346,7 @@
     .categorias_home .cat_home .cada_cat ul {
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
         text-align: center;
         margin-top: 13px;
     }
@@ -340,7 +354,12 @@
         margin-bottom: 48px;
         margin-top: 39px;
     }
-
+    .categorias_home .cat_home .cada_cat:last-of-type {
+        margin-bottom: 47px;
+    }
+    .categorias_home .circulos_h{
+        display: none;
+    }
     .conforto .dentro_conforto {
         padding-top: 21px;
         padding-left: 15px;
@@ -349,14 +368,27 @@
         text-transform: uppercase;
         font-size: 28px;
         line-height: 27px;
-        margin-bottom: 38px;
+        margin-bottom: 14px;
+    }
+    .conforto .dentro_conforto .texto_conforto .saiba_mais {
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: #12397C;
+        background: #FFF;
+        border-radius: 6px;
+        text-transform: uppercase;
+        font-family: 'Gotham Bold';
+        width: 160px;
     }
     .conforto .dentro_conforto .texto_conforto {
         padding-left: 27px;
         padding-right: 50px;
     }
     .conforto .dentro_conforto .texto_conforto p {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 20px;
         margin-bottom: 22px;
         padding-right: 24px;
@@ -369,7 +401,7 @@
         top: -10vh;
     }
     .conforto .dentro_conforto .tabs_conforto {
-        padding-right: 33px;
+        padding-right: 23px;
     }
     .conforto .dentro_conforto .tabs_conforto ul li {
         width: 100%;
@@ -391,10 +423,15 @@
         top: initial;
         bottom: 64px;
     }
-    .conforto .dentro_conforto .tabs_conforto ul{
-        margin-top: 13px;
-    }
 
+    .conforto .dentro_conforto .tabs_conforto ul {
+        display: grid;
+        grid-template-areas: "li li";
+        grid-template-rows: 45px 45px;
+        grid-gap: 5px;
+        margin-top: 13px;
+        padding-right: 22px;
+    }
     .regulamento .inner_box .dentro_regulamento h1 {
         line-height: 60px;
         font-size: 33px;
