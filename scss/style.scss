@@ -24,7 +24,9 @@ a, i {
     z-index: 20;
     position: relative;
 }
-
+div#fullpage {
+    min-height: -webkit-fill-available;
+}
 // Menu
 @import "menu";
 

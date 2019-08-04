@@ -1,8 +1,9 @@
     @font-face {
     font-family: 'Gotham Book';
-    font-style: normal;
+    src: url('../fonts/Gotham-Book.woff') format('woff'),
+    url('../fonts/Gotham-Book.woff2') format('woff2'),
+    url('../fonts/Gotham-Book.ttf') format('truetype');
     font-weight: normal;
-    src: local('Gotham Book'), url('../fonts/GothamBook.woff') format('woff');
     }
     
     
