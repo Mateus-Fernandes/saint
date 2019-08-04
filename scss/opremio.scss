@@ -265,9 +265,9 @@
                         text-transform: uppercase;
                     }
                     .premio{
-                        font-size: 20px;
+                        font-size: 29px;
                         color: #12397C;
-                        line-height: 21px;
+                        font-size: 29px;
                         font-family: 'Gotham Bold';
                         small{
                             font-family: 'Gotham Book';
@@ -315,7 +315,7 @@
                 }
                 .premio{
                     color: rgba(200, 19, 22, 1);
-                    font-family: 'Gotham Book';
+                    font-family: 'Gotham Bold';
                     small{
                         font-size: 14px;
                         line-height: 16px;
@@ -332,11 +332,14 @@
                         font-family: 'Gotham Book';
                     }
                 }
+                .premio{
+                    font-size: 21px !important;
+                }
             }
             .item_bloco{
                 min-height: 242px;
                 .premio{
-                    font-size: 20px;
+                    font-size: 21px !important;
                     color: rgba(18, 57, 124, 1);
                     line-height: 24px;
                     text-transform: uppercase;
@@ -348,6 +351,13 @@
                 }
                 h4{
                     margin-bottom: 0 !important;
+                    font-size: 29px !important;
+                    small{
+                        font-size: 14px;
+                        font-family: 'Gotham Book';
+                        text-transform: lowercase;
+                        margin-top: 5px
+                    }
                 }
                 .circulos_h.circulos_hadd{
                     top: -14px;
@@ -439,7 +449,7 @@
                 font-size: 40px;
                 font-family: 'Gotham Bold';
                 line-height: 48px;
-                margin-bottom: 41px;
+                margin-bottom: 0px;
                 margin-left: -35px;
             }
             small{
@@ -471,7 +481,7 @@
         }  
         a.botao{
             height: 62px;
-            width: 426px;
+            width: 320px;
             font-size: 25px;
             position: relative;
             z-index: 3;
@@ -540,6 +550,12 @@
                         color: #12397C;
                         line-height: 31px;
                         font-size: 26px;
+                    }
+                    span.ate {
+                        font-size: 19px !important;
+                        line-height: 7px !important;
+                        position: relative;
+                        color: #c81316 !important;
                     }
                 }
                 .item_descricao {

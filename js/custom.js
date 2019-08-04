@@ -8,13 +8,18 @@ $(".closer").click(function()
 });
 $(document).ready(function() {
   
-  $( "#premio_read" ).click(function() {
+  $("#premio_read").click(function() {
     $( this ).toggleClass( "expandido" );
-    $( ".read_more_text" ).toggle(function() {
-        $('#premio_read').children('.text').text("Continuar Lendo");
-    }, function() {
-        $('#premio_read').children('.text').text("Encolher Texto");
-    });
+    var elem = $("#premio_read").children('.text').text();
+    if (elem == "Continuar Lendo") {
+      //Stuff to do when btn is in the read more state
+      $("#premio_read").children('.text').text("Encolher texto");
+      $(".read_more_text").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#premio_read").children('.text').text("Continuar Lendo");
+      $(".read_more_text").slideUp();
+    }
   });
   
   $("a.link_page").click(function() {
@@ -86,6 +91,8 @@ $(document).ready(function() {
     speed: 300,
     slidesToShow: 5,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
     responsive: [
       {
         breakpoint: 1024,
