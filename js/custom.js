@@ -75,7 +75,7 @@ $(document).ready(function() {
         anchors: ['secao_1', 'secao_2', 'categorias_home', 'conforto', 'regulamento', 'como_foi', 'footer'],
         menu: '#MenuLinks',
         scrollingSpeed: 300,
-        normalScrollElements: '#scroll',
+        normalScrollElements: '.text_conforto_inner',
         onLeave: function(index, nextIndex, direction){
             if(index == 1 && direction =='down'){
 				$('.mulher').addClass('to_left');
@@ -131,6 +131,18 @@ $(document).ready(function() {
       }
     ]
   });
+  
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    /* the viewport is less than 768 pixels wide */
+    $('.empresas').slick({
+      infinite: false,
+      speed: 800,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000,
+    });
+  }  
 
   if (document.getElementById('video_box')) { 
     document.getElementById('play_btn').onclick = function (){

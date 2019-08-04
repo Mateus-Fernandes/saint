@@ -379,7 +379,7 @@ section.secao_2 {
                     content: '•';
                     float: left;
                     height: 100%;
-                    margin-right: 7px;
+                    margin-right: 2px;
                 }
                 span {
                     display: block;
@@ -591,7 +591,9 @@ section.secao_2 {
 	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         }
         .tab-content.current{
-			display: inherit;
+            display: block;
+            z-index: 99999;
+            position: relative;
 		}
         .tabs_conforto {
             padding-right: 85px;
