@@ -261,13 +261,14 @@
   .regulamento .inner_box .dentro_regulamento h1 { font-size: 29px; letter-spacing: -0.1em; }
   .regulamento .inner_box .dentro_regulamento .lista_regulamento ul li { font-size: 13px; line-height: 13px; } }
 
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) { .text_right .premio { margin-top: 219px; }
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) { .text_right .premio { margin-top: 207px; }
   .secao_2 .right_dois .premiacoes { padding: 15px 12px; margin-top: 56px; }
   .secao_2 .right_dois p { font-size: 18px; }
   .regulamento .inner_box .dentro_regulamento .lista_regulamento ul { grid-template-rows: 60px 60px; }
   .regulamento .inner_box .dentro_regulamento .lista_regulamento ul li { height: 59px; }
   .footer .inner_box_grey p { font-size: 14px; }
-  .seven { top: 55%; } }
+  .seven { top: 54%; }
+  .mulher { left: -47vw; } }
 
 @media only screen and (device-width: 375px) and (device-height: 667px) { .mulher { left: -49vw; }
   .seven { top: 50%; }
@@ -284,7 +285,7 @@
   .text_right .inscricoes { margin-top: 8px; } }
 
 @media only screen and (device-width: 360px) and (device-height: 640px) { .mulher { left: -48vw; }
-  .seven { top: 50%; }
-  .text_right .premio { margin-top: 105px; } }
+  .seven { top: 48%; }
+  .text_right .premio { margin-top: 113px; } }
 
 @media screen and (min-width: 1024px) { .categorias_home .saiba { width: 210px; position: relative; z-index: 10; margin-right: 200px; } }
