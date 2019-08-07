@@ -1,7 +1,8 @@
-$(".hamburger").click(function()
-{
-    $(".menu").toggleClass("open_menu");
-});
+
+
+
+
+
 $(".closer").click(function()
 {
     $(".menu").removeClass("open_menu");
@@ -12,10 +13,7 @@ $(document).mouseup(function (e) {
   if (!$('.menu').is(e.target) && !popup.is(e.target) && popup.has(e.target).length == 0) {
       $(".menu").removeClass("open_menu");
   }
-  $(".hamburger").click(function()
-  {
-      $(".menu").toggleClass("open_menu");
-  });
+
 });
 
 $(".menu a").click(function()
@@ -23,7 +21,10 @@ $(".menu a").click(function()
     $(".menu").removeClass("open_menu");
 });
 $(document).ready(function() {
-  
+  $(".hamburger").click(function()
+  {
+      $(".menu").toggleClass("open_menu");
+  });
   $("#premio_read").click(function() {
     $( this ).toggleClass( "expandido" );
     var elem = $("#premio_read").children('.text').text();
@@ -39,7 +40,11 @@ $(document).ready(function() {
   });
 
 
-
+  $(".menu").hover(function(){
+    $(this).addClass("open_menu").fadeIn();
+  }, function() {
+      $(this).removeClass("open_menu").stop(true, true);
+  });
 
 
   $("a.link_page").click(function() {
@@ -70,42 +75,48 @@ $(document).ready(function() {
 
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
-	});  
-	$('#fullpage').pagepiling({
-        anchors: ['secao_1', 'secao_2', 'categorias_home', 'conforto', 'regulamento', 'como_foi', 'footer'],
-        menu: '#MenuLinks',
-        scrollingSpeed: 300,
-        normalScrollElements: '.text_conforto_inner',
-        onLeave: function(index, nextIndex, direction){
-            if(index == 1 && direction =='down'){
-				$('.mulher').addClass('to_left');
-			}
-			else if(index == 2 && direction == 'up'){
-				$('.mulher').removeClass('to_left');
-            }
-            else if(index == 3 && direction =='up'){
-				$('.mulher').addClass('to_left');
-			}
-        },
-        afterLoad: function(anchorLink, index){
-			//using index
-			if(index == 3 || index == 4 || index == 5 || index == 6 || index == 7){
-                $('.mulher').addClass('sumir');
-                $('header').addClass('blue');
-                $('.menu').addClass('blue');
-            }
-            else if(index == 1) {
-                $('.mulher').removeClass('to_left');
-                $('.mulher').removeClass('sumir');
-            }
-            else {
-                $('.mulher').removeClass('sumir');
-                $('header').removeClass('blue');
-                $('.menu').removeClass('blue');
-            }
-        }
-    });
+  });  
+  
+  if (matchMedia('only screen and (min-width: 768px)').matches) {
+    //     and here your    Plugin intialization
+    $('#fullpage').pagepiling({
+      anchors: ['secao_1', 'secao_2', 'categorias_home', 'como_foi', 'footer'],
+      menu: '#MenuLinks',
+      scrollingSpeed: 300,
+      normalScrollElements: '.text_conforto_inner',
+      onLeave: function(index, nextIndex, direction){
+          if(index == 1 && direction =='down'){
+      $('.mulher').addClass('to_left');
+    }
+    else if(index == 2 && direction == 'up'){
+      $('.mulher').removeClass('to_left');
+          }
+          else if(index == 3 && direction =='up'){
+      $('.mulher').addClass('to_left');
+    }
+      },
+      afterLoad: function(anchorLink, index){
+    //using index
+    if(index == 3 || index == 4 || index == 5 || index == 6 || index == 7){
+              $('.mulher').addClass('sumir');
+              $('header').addClass('blue');
+              $('.menu').addClass('blue');
+          }
+          else if(index == 1) {
+              $('.mulher').removeClass('to_left');
+              $('.mulher').removeClass('sumir');
+          }
+          else {
+              $('.mulher').removeClass('sumir');
+              $('header').removeClass('blue');
+              $('.menu').removeClass('blue');
+          }
+      }
+  });
+  }
+
 });
+
 
   $('.apoiadores').slick({
     infinite: false,
@@ -142,6 +153,22 @@ $(document).ready(function() {
       autoplay: true,
       autoplaySpeed: 1000,
     });
+
+    $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();
+    
+       //>=, not <=
+      if (scroll >= 10) {
+          //clearHeader, not clearheader - caps H
+          $("header").addClass("header-sticky");
+          $(".logo_mobile").addClass("logo-sticky");
+      }else{
+          $("header").removeClass("header-sticky");
+          $(".logo_mobile").removeClass("logo-sticky");
+      }
+    }); //missing );
+
+    $('.section').addClass('pp-scrollable');
   }  
 
   if (document.getElementById('video_box')) { 

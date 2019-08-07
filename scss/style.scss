@@ -38,7 +38,7 @@ header {
     top: 10px;
     right: 0vw;
     flex-direction: row-reverse;
-    z-index: 10;
+    z-index: 99999;
 }
 
 .hamburger {
@@ -72,10 +72,19 @@ header {
                 color: #12397C;
             }
         }
+        svg{
+            width: 16px;
+            position: relative;
+            top: -2px;
+            fill: #ca9c7f;
+        }
     }
 }
 header.blue {
     .social a i:before {color: #12397C;}
+    .social a svg{
+        fill: #12397C;
+    }
     .social a:hover i:before {
         color: #9e6c4c;
     }
@@ -885,7 +894,7 @@ section.secao_2 {
                 margin: 0 50px;
             }
             .slick-slide img {
-                max-height: 40px !important;
+                max-height: unset !important;
                 width: auto !important;
             }
             .slick-slide {
@@ -893,6 +902,11 @@ section.secao_2 {
                 align-items: center;
                 justify-content: center;
             }
+            .slick-slide > div {
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+            }            
             .slick-track {
                 display: flex;
                 align-items: center;
@@ -952,10 +966,10 @@ section.secao_2 {
             border-radius: 10px;
         }
         h3 {
-            font-family: 'Gotham Bold';
+            font-family: 'Gotham Book';
             color: #FFF;
             text-transform: uppercase;
-            font-size: 16px;
+            font-size: 17px;
             line-height: 19px;
             margin-bottom: 21px;
             position: relative;
@@ -971,7 +985,7 @@ section.secao_2 {
         }
     }
     .consulte {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 24px;
         color: #7F7F7F;
         margin: 0 auto;

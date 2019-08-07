@@ -218,47 +218,176 @@
  @media screen and ( max-width: 500px ) {
      body, html{
          max-width: 100%;
+         background: #eee2d0;
+         background: linear-gradient(91deg, #eee2d0 0%, #f8e7d7 100%);
+         overflow: unset !important;
+         scroll-behavior: smooth;
+     }
+     .section{
+         background: transparent !important;
+         
      }
     .mulher{
-       display: none;
+        display: none;
+        bottom: 0px;
+        height: auto;
+        top: unset;
+        left: -143px;
+        z-index: 9;
+       img{
+           width: auto;
+       }
     }
+    .mulher.mulher_mobile{
+        display: block !important;
+    }
+    .logo.logomobile{
+        display: flex !important;
+    }
+
+    .logo {
+
+        display: none;
+
+    }
+    header{
+        transition: .3s all;
+    }
+    header.d-flex.header-sticky {
+        top: 32px;
+    }
+
+    .logo.logo_mobile{
+        width: 149px;
+        height: 120px;
+        background-size: cover;
+        top: -20px;
+        display: flex !important;
+        left: 10px;
+        z-index: 999;
+        //position: fixed;  // Logo fixed
+        transition: .3s all;
+        img{
+            width: 105px;
+        }
+    }
+
     .text_right .premio {
-        margin-top: 75px;
-        font-size: 18px;
+        margin-top: 245px;
+        font-size: 14px;
+        text-align: right;
+        padding-right: 4px;
+        line-height: 34px;
     }
     .text_right .premio span:nth-of-type(2) {
-        font-size: 24px;
-        left: -30px;
+        font-size: 23px;
+        left: 0;
     }
+    .text_right .premio span:nth-of-type(3) {
+        left: 0;
+    }    
     .text_right {
         padding-top: 60px;
         padding-right: 6px;
     }
+    .secao_1 a.arrow_v2.descer{
+        display: none;
+    }
+    .section {
+        height: 100% !important;
+        min-width: -webkit-fill-available;
+        min-height: auto !important;
+        overflow-y: scroll !important;
+        max-height: inherit !important;
+        overflow: unset !important;
+    }    
+    .pp-section {
+        height: 100% !important;
+        min-width: -webkit-fill-available;
+        min-height: 100vh !important;
+        overflow-y: scroll !important;
+        max-height: inherit !important;
+    }
     .seven {
-        left: -162vw;
-        top: 46%;
+        left: -23vw;
+        top: 60%;
         svg{
-            height: 202px
+            height: 150px;
+            width: 377px;
         }
+    }
+    .footer .more_bottom {
+        position: absolute;
+        right: 14px;
+        bottom: -31px;
+    }
+    .secao_1 .circulos {
+        top: 45vh;
+        display: none;
     }
     .circulos {
         top: 45vh;
     }
+    .text_right .inspire {
+        text-transform: uppercase;
+        color: #CA9C7F;
+        opacity: 0.5;
+        letter-spacing: 0.24em;
+        line-height: 28px;
+        font-size: 18px;
+        font-family: 'Gotham Bold';
+    }
     .inner_box {
         position: relative;
         width: 90vw;
-        height: 90vh;
+        height: auto;
         margin: 0 auto;
         margin-top: 5vh;
         margin-bottom: 5vh;
         border-radius: 10px;
+        z-index: 10;
+        &:after{
+            display: none;
+        }
+    }
+    .secao_1{
+        .inner_box{
+            margin-bottom: 0;
+        }
+    }
+    .mulher.to_left img {
+        width: auto;
+    }
+    .mulher.to_left {
+        left: -49vw;
+        top: 55px;
+        opacity: 0.5;
+    }
+    .o_premio .categorias_opremio .cat_home .cada_item_cat_prof {
+        min-width: 247px;
+        width: 242px;
     }
     .secao_1 .more_bottom {
         right: -17px;
         bottom: 94%;
+        display: none;
     }
     .text_right .inscricoes {
-        margin-top: 73px;
+        margin-top: 22px;
+        z-index: 20;
+        position: relative;
+        width: 248px;
+        right: 34px;
+    }
+    .text_right .inscricoes .ate {
+        font-size: 33px;
+        text-transform: uppercase;
+        color: #C81316;
+        font-family: 'Gotham Book';
+        margin-top: 5px;
+        display: inherit;
+        margin-top: 16px;
+        margin-left: 48px;
     }
     .arrow_v2 {
         bottom: 46px;
@@ -274,35 +403,50 @@
         bottom: 3vh;
     }
     .texto_left {
-        width: 100%;
+        width: 80%;
         left: 8px;
         padding-top: 20px;
+        .preco{
+            font-size: 60px;
+            margin-top: 40px;
+            span {
+                font-size: 26px;
+                color: #C81316;
+                letter-spacing: -0.025em;
+                text-transform: none;
+            }
+        }   
         span{
-            font-size: 26px;
-            text-transform: uppercase;
-            color: #12397C;
-            line-height: 23px;
+                font-size: 25px;
+                text-transform: uppercase;
+                color: #12397C;
+                line-height: 25px;
         }
-        .preco {
-            font-size: 59px;
-        }        
     }
     .secao_2 .right_dois .premiacoes h2 {
-        font-size: 19px;
-        margin-bottom: 0px;
+        font-size: 21px;
+        margin-bottom: 22px;
+        line-height: 26px;
     }
     .secao_2{
         .circulos_h{
             display: none;
         }
     }
+    .secao_2 .more_bottom {
+        right: unset;
+        left: -25px;
+        bottom: 282px;
+    }
     .secao_2 .right_dois {
-        padding-right: 10px;
+        padding-right: 2px;
         padding-top: 13px;
-        padding-left: 11px;
+        padding-left: 2px;
         p{
-            font-size: 16px;
-            margin-bottom: 6px;
+            font-size: 18px;
+            margin-bottom: 59px;
+            line-height: 26px;
+            margin-top: 40px;
         }
     }
     .secao_2 .right_dois .premiacoes {
@@ -313,7 +457,7 @@
         font-family: 'Gotham Book';
         font-weight: normal;
         font-size: 18px;
-        line-height: 20px;
+        line-height: 30px;
         color: #12397C;
         text-transform: uppercase;
         margin-right: 23px;
@@ -323,9 +467,10 @@
         display: none;
     }
     .secao_2 .right_dois .inscreva {
-        margin-top: -7px;
-        padding-left: 72px;
+        margin-top: 35px;
+        padding-left: 2px;
         position: relative;
+        margin-bottom: 21px;
     }
     .categorias_home .rosto {
         top: 28vh;
@@ -336,7 +481,7 @@
         position: relative;
         z-index: 10;
         padding-left: 15px;
-        padding-top: 70px;
+        padding-top: 4px;
     }
     .categorias_home .cat_home h1 {
         font-size: 29px;
@@ -344,14 +489,18 @@
     }
     .categorias_home .cat_home .cada_cat h2 {
         font-size: 25px;
-        line-height: 28px;
+        line-height: 36px;
+        margin-bottom: 18px;
     }
     .categorias_home .cat_home .cada_cat h3 {
         color: #12397C;
-        font-size: 22px;
-        line-height: 31px;
+        font-size: 26px;
+        line-height: 33px;
         font-family: 'Gotham Book';
         margin-bottom: 5px;
+        span{
+            display: block;
+        }
     }
     .categorias_home .more_bottom.more_left {
         display: none;
@@ -359,28 +508,44 @@
     .categorias_home .cat_home .cada_cat ul li {
         padding-left: 15px;
         margin-right: 51px;
-        font-size: 22px;
+        font-size: 21px;
         line-height: 24px;
+        margin-bottom: 14px;
     }
     .categorias_home .cat_home .cada_cat ul {
         flex-wrap: wrap;
         align-items: center;
         justify-content: left;
         text-align: center;
-        margin-top: 13px;
+        margin-top: 33px;
     }
     .categorias_home .cat_home .cada_cat {
         margin-bottom: 27px;
-        margin-top: 20px;
+        margin-top: 2px;
     }
     .categorias_home .cat_home .cada_cat:last-of-type {
-        margin-bottom: 22px;
+        margin-bottom: 60px;
     }
     .categorias_home .circulos_h{
         display: none;
     }
     .categorias_home .circulo_left {
         top: -5vh;
+        display: none;
+    }
+    .como_foi .inner_box .dentro_como h2 {
+        color: #12397C;
+        font-family: 'Gotham Book';
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        font-size: 31px;
+        line-height: 39px;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+    .como_foi .inner_box .dentro_como {
+        padding-top: 0px;
     }
     .conforto .dentro_conforto {
         padding-top: 21px;
@@ -474,7 +639,7 @@
     .regulamento .inner_box .dentro_regulamento .lista_regulamento ul {
         grid-template-areas: "li li";
         grid-gap: 10px;
-        grid-template-rows: 55px 55px;
+        grid-template-rows: 40px 40px;
     }
     .regulamento .inner_box .dentro_regulamento .lista_regulamento ul li {
         width: 100%;
@@ -492,7 +657,14 @@
         line-height: 15px;
     }
     .regulamento .inner_box .dentro_regulamento .baixe_regulamento {
-        margin-top: 27px;
+        margin-top: 15px;
+    }
+    .conforto .inner_box{
+        width: 90vw;
+        height: 82vh;
+        margin: 0 auto;
+        margin-top: 5vh;
+        margin-bottom: 11vh;
     }
     .tab-content p {
         max-height: 31vh;
@@ -529,8 +701,8 @@
             right: 0;
         }
         .slick-next, .slick-prev {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             background: #7F7F7F;
             border-radius: 8px;
             &:before {
@@ -554,7 +726,7 @@
         height: 48px;
         justify-content: center;
         align-items: center;
-        font-size: 16px;
+        font-size: 13px;
         color: #FFF;
         background: #12397C;
         border-radius: 5px;
@@ -562,26 +734,50 @@
         text-transform: uppercase;
         text-align: center;
     }
+    .como_foi {
+        .more_bottom.more_left{
+            display: none;
+        }
+        .more_bottom{
+            display: none;
+        }
+    }
     .footer .inner_box_white {
         position: relative;
         width: 90vw;
-        height: 44vh;
+        height: auto !important;
         margin: 0 auto;
-        margin-top: 4vh;
+        margin-top: 5vh;
         margin-bottom: 1vh;
         border-radius: 10px;
         background: #FFF;
         padding: 14px 5px;
-    }.footer .inner_box_grey {
-        padding: 3px 6px;
-        height: 28vh;
+        padding-bottom: 60px;
+        h3{
+            text-align: center;
+        }
+    }
+    .footer .inner_box_white .apoiadores .slick-next, .footer .inner_box_white .apoiadores .slick-prev {
+        width: 40px;
+        height: 40px;
+        background: #7F7F7F;
+        border-radius: 8px;
+    }
+    .footer .inner_box_grey {
+        padding: 5px 30px;
+        height: auto;
         margin-bottom: 4vh;
+        padding-bottom: 30px;
     }.footer .inner_box_grey h3 {
-        margin-bottom: 3px;
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+    .footer.pp-section.pp-scrollable {
+        height: 200px !important;
     }
     .footer .inner_box_grey p {
-        font-size: 12px;
-        line-height: 13px;
+        font-size: 15px;
+        line-height: 23px;
     }
     .footer .consulte {
         font-size: 16px;
@@ -591,7 +787,14 @@
         width: 90vw;
         padding-left: 7px;
         position: relative;
-        bottom: -3px;
+        bottom: 20px;
+    }
+    .footer .more_left {
+        display: none;
+    }
+    .footer h3 {
+        margin-top: 20px;
+        margin-bottom: 24px;
     }
     .hamburger {
     margin-right: 19px;
@@ -603,6 +806,10 @@
     .menu ul {
         padding-right: 29px;
         padding-left: 25px;
+    }
+    .arrow_v2.subir{
+
+        display: none;
     }
     .pp-section {
         height: 100vh;
@@ -657,7 +864,30 @@
     }
     .modal-body {
         padding: 20px 20px;
+        padding-top: 4px;
+        padding-left: 5px;
     }
+    .modal-dialog {
+        margin-top: 70px;
+        margin-right: 24px;
+    }
+    .modal-body h4.text-primary {
+        font-family: 'Gotham Bold';
+        text-transform: uppercase;
+        color: #313131 !important;
+        text-align: left;
+        font-size: 20px;
+    }
+    .modal-body .conteudo-regulamento ol {
+        counter-reset: item;
+        list-style-type: none;
+        font-size: 15px;
+    }
+    .categorias_page .conforto .inner_box{
+        height: inherit !important;
+    }
+
+    
     //Categorias page
     .categorias_page .conforto .dentro_conforto .texto_conforto p {
         padding-right: 0;
@@ -813,11 +1043,20 @@
         left: -31px;
         display: none;
     }
+    .categorias_home .more_bottom {
+        position: absolute;
+        right: -9px;
+        bottom: -26px;
+    }
  }
  @media (min-width: 390px) and (max-width: 420px) {
-    .seven{
-        left: -143vw;
-        top: 43%;
+    .seven {
+        left: -13vw;
+        top: 54%;
+        svg{
+            height: 150px;
+            width: 377px;
+        }
     }
 }
  @media (min-width: 320px) and (max-width: 370px) {
@@ -828,9 +1067,19 @@
     }
     .footer .inner_box_grey {
         padding: 3px 6px;
-        height: 32vh;
+        height: auto;
         margin-bottom: 0vh;
         margin-top: 1vh;
+    }
+    .text_right .premio {
+        margin-top: 150px;
+    }
+    .secao_2 .more_bottom {
+        display: none;
+    }
+    .footer .consulte {
+
+        bottom: 0px;
     }
     .conforto .dentro_conforto h2 {
         font-size: 23px;
@@ -842,27 +1091,32 @@
         max-height: 31vh;
     }
     .seven {
-        left: -192vw;
-        top: 51%;
+        left: -25vw;
+        top: 54%;
+        svg{
+            height: 150px;
+            width: 377px;
+        }
     }
-    .text_right .premio span:nth-of-type(3) {
-        left: -36px;
-    }
-    .text_right .premio span:nth-of-type(2) {
-        font-size: 24px;
-        left: -19px;
+    .logo.logo_mobile {
+        width: 128px;
+        height: 104px;
+        top: -20px;
+        left: 2px;
     }
     .text_right .inspire {
         letter-spacing: 0.24em;
-        line-height: 29px;
-        font-size: 19px;
+        line-height: 21px;
+        font-size: 14px;
         padding-top: 7px;
+        margin-bottom: 32px;
     }
     .text_right .inscricoes {
         margin-top: 26px;
     }
     .text_right .inscricoes .ate {
-        font-size: 43px;
+        font-size: 30px;
+        margin-top: 8px;
     }
     .secao_2 .right_dois p {
         font-size: 15px;
@@ -923,11 +1177,9 @@
  and (device-width : 375px) 
  and (device-height : 812px) 
  and (-webkit-device-pixel-ratio : 3) { 
-    .logo {
-        top: -8vh;
-    }
+
     .text_right .premio {
-        margin-top: 138px;
+        margin-top: 336px;
     }
     .secao_2 .right_dois .premiacoes {
         padding: 15px 12px;

@@ -96,15 +96,22 @@
                 right: -450px;
                 z-index: 10;
             }
+            .categoria_profissional_items {
+                margin-left: 5px !important;
+            }
+            .cada_item_cat_prof {
+                min-width: 247px;
+                width: 307px;
+            }
             .cada_cat{
                 &:last-of-type{
                     margin-bottom: 45px;
                 }
                 .descricao_cat{
-                    width: 356px;
+                    min-width: 260px;
                     position: relative;
                     .circulos_h{
-                        top: 22px;
+                        top: -13px;
                         left: unset;
                         right: -100px;
                     }   
@@ -316,6 +323,7 @@
                 .premio{
                     color: rgba(200, 19, 22, 1);
                     font-family: 'Gotham Bold';
+                    font-size: 26px;
                     small{
                         font-size: 14px;
                         line-height: 16px;
@@ -353,10 +361,11 @@
                     margin-bottom: 0 !important;
                     font-size: 29px !important;
                     small{
-                        font-size: 14px;
                         font-family: 'Gotham Book';
+                        font-size: 12px;
+                        line-height: 43px;
+                        color: #12397C;
                         text-transform: lowercase;
-                        margin-top: 5px
                     }
                 }
                 .circulos_h.circulos_hadd{
@@ -373,6 +382,9 @@
             .item_bloco.blueBlock{
                 .premio{
                     color: rgba(18, 57, 124, 1) !important;
+                    font-size: 18px !important;
+                    line-height: 19px;
+                    margin-bottom: 22px;
                 }
                 h4{
                     color: rgba(18, 57, 124, 1) !important;
@@ -391,6 +403,9 @@
             .item_bloco.redBlock{
                 .premio{
                     color: rgba(200, 19, 22, 1) !important;
+                    font-size: 18px !important;
+                     line-height: 19px;
+                     margin-bottom: 22px;
                 }
                 h4{
                     color: rgba(200, 19, 22, 1) !important;
@@ -556,6 +571,7 @@
                         line-height: 7px !important;
                         position: relative;
                         color: #c81316 !important;
+                        text-transform: lowercase;
                     }
                 }
                 .item_descricao {

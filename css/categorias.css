@@ -1,1 +1,89 @@
-.conforto_page{max-height:initial;overflow:inherit;background:none}.conforto_page .inner_box{height:inherit;overflow:hidden}.conforto_page .inner_box:after{background-image:url("../images/categorias/bg_cat_page.png")}.conforto_page .inscrevaBig{display:flex;width:426px;height:62px;justify-content:center;align-items:center;font-size:21px;color:#12397C;background:#FFF;border-radius:5px;font-family:'Gotham Bold';text-transform:uppercase;margin-bottom:39px;margin-top:21px}.conforto_page .inscrevaBig:hover{background:#12397C;color:#FFF}.conforto_page .dentro_conforto .tabs_conforto{padding-right:108px}.conforto_page .dentro_conforto .tabs_conforto ul li{width:350px}.conforto_page .dentro_conforto .tab-content.current{display:block;column-count:2;-webkit-column-count:2;-moz-column-count:2;column-gap:40px}.conforto_page .dentro_conforto .texto_conforto{padding-right:81px}.conforto_page .dentro_conforto .texto_conforto p{margin-bottom:18px;overflow:inherit;max-height:initial}.conforto_page .dentro_conforto .texto_conforto ul li{color:#FFF;font-size:18px}.conforto_page .dentro_conforto div#tab-6{column-count:1}.conforto_page .dentro_conforto table#matriz_sustentabilidade img{width:70px}.conforto_page .dentro_conforto table#matriz_sustentabilidade .popup-sustentabilidade{position:relative;background:#FFF;padding:20px;width:25%;margin:20px auto}.conforto_page .dentro_conforto table#matriz_sustentabilidade .skew{background:#fff;position:relative;min-height:120px;-webkit-box-shadow:2px 2px 41px -12px rgba(0,0,0,0.3);-moz-box-shadow:2px 2px 41px -12px rgba(0,0,0,0.3);box-shadow:2px 2px 41px -12px rgba(0,0,0,0.3);z-index:2;border-radius:5px}.conforto_page .dentro_conforto table#matriz_sustentabilidade .skew a{color:#12397C;font-family:'Gotham Bold';transition:.3s;text-transform:initial}.conforto_page .dentro_conforto table#matriz_sustentabilidade .skew a:hover{color:#c81316}.categorias{background:#B6DAF4;background:linear-gradient(91deg, #B6DAF4 0%, #EADFF0 100%)}.categorias .footer{background:url("../images/categorias/bg_footer.png") bottom center}.inner_empresa{margin-bottom:60px;margin-top:inherit;padding:52px 100px;height:initial}.inner_empresa svg{fill:#ca9c7f}.inner_empresa:after{background:#FFF;opacity:1}.inner_empresa .row{z-index:10}.inner_empresa .logo_empresa{display:flex;justify-content:center;align-items:center}.inner_empresa .logo_empresa img{width:230px}.inner_empresa .texto_empresa h3{color:#12397C;font-size:20px;line-height:19px;margin-bottom:26px;font-family:'Gotham Black Regular';text-transform:uppercase}.inner_empresa .texto_empresa p{font-size:16px;line-height:19px;color:#12397C;margin-bottom:20px}.inner_empresa .texto_empresa p:last-child{text-transform:uppercase;margin-bottom:0}.inner_empresa .texto_empresa a{font-family:'Gotham Bold';color:#12397C;font-size:14px;margin-right:28px;transition:.3s}.inner_empresa .texto_empresa a:hover{color:#c81316}.empresa_impar .circulo_left{left:111px;bottom:27px}.empresa_impar .more_bottom{position:absolute;right:-30px;bottom:30px}.empresa_impar .circulos_h{position:absolute;top:4px;left:32vw}.empresa_par .circulos_h{position:absolute;top:4px;left:32vw}.empresa_par .more_left{bottom:initial;top:-29px}.empresa_par .circulos{right:34px}.conforto_page .dentro_conforto .tabs_conforto .circulo_left{right:inherit;left:99px;bottom:inherit;top:10vh}.conforto_page .dentro_conforto .tabs_conforto .middle_more{top:95vh;right:50%;transform:translateX(-50%)}.conforto_page .more_bottom{right:initial;left:-27px;bottom:135px}.conforto_page .more_top{bottom:initial;top:62vh}img.x80{width:80px}.popup-sustentabilidade{position:relative;background:#FFF;padding:20px;width:25%;margin:20px auto}.sustentabilidade_item_txt{font-size:1em;color:#000;line-height:1.2em}h4.small{color:#FFF !important;font-family:'Gotham Bold';font-size:15px}h4.small a{color:#FFF}
+.conforto_page { max-height: initial; overflow: inherit; background: none; }
+
+.conforto_page .inner_box { height: inherit; overflow: hidden; }
+
+.conforto_page .inner_box:after { background-image: url("../images/categorias/bg_cat_page.png"); }
+
+.conforto_page .inscrevaBig { display: flex; width: 426px; height: 62px; justify-content: center; align-items: center; font-size: 21px; color: #12397C; background: #FFF; border-radius: 5px; font-family: 'Gotham Bold'; text-transform: uppercase; margin-bottom: 39px; margin-top: 21px; }
+
+.conforto_page .inscrevaBig:hover { background: #12397C; color: #FFF; }
+
+.conforto_page .dentro_conforto .tabs_conforto { padding-right: 108px; }
+
+.conforto_page .dentro_conforto .tabs_conforto ul li { width: 350px; }
+
+.conforto_page .dentro_conforto .tab-content.current { display: block; column-count: 2; -webkit-column-count: 2; /* Chrome, Safari, Opera */ -moz-column-count: 2; /* Firefox */ column-gap: 40px; }
+
+.conforto_page .dentro_conforto .texto_conforto { padding-right: 81px; }
+
+.conforto_page .dentro_conforto .texto_conforto p { margin-bottom: 18px; overflow: inherit; max-height: initial; }
+
+.conforto_page .dentro_conforto .texto_conforto ul li { color: #FFF; font-size: 18px; }
+
+.conforto_page .dentro_conforto div#tab-6 { column-count: 1; }
+
+.conforto_page .dentro_conforto table#matriz_sustentabilidade img { width: 70px; }
+
+.conforto_page .dentro_conforto table#matriz_sustentabilidade .popup-sustentabilidade { position: relative; background: #FFF; padding: 20px; width: 25%; margin: 20px auto; }
+
+.conforto_page .dentro_conforto table#matriz_sustentabilidade .skew { background: #fff; position: relative; min-height: 120px; -webkit-box-shadow: 2px 2px 41px -12px rgba(0, 0, 0, 0.3); -moz-box-shadow: 2px 2px 41px -12px rgba(0, 0, 0, 0.3); box-shadow: 2px 2px 41px -12px rgba(0, 0, 0, 0.3); z-index: 2; border-radius: 5px; }
+
+.conforto_page .dentro_conforto table#matriz_sustentabilidade .skew a { color: #12397C; font-family: 'Gotham Bold'; transition: .3s; text-transform: initial; }
+
+.conforto_page .dentro_conforto table#matriz_sustentabilidade .skew a:hover { color: #c81316; }
+
+.categorias { background: #B6DAF4; background: linear-gradient(91deg, #B6DAF4 0%, #EADFF0 100%); }
+
+.categorias .footer { background: url("../images/categorias/bg_footer.png") bottom center; }
+
+.inner_empresa { margin-bottom: 60px; margin-top: inherit; padding: 52px 100px; height: initial; }
+
+.inner_empresa svg { fill: #ca9c7f; }
+
+.inner_empresa:after { background: #FFF; opacity: 1; }
+
+.inner_empresa .row { z-index: 10; }
+
+.inner_empresa .logo_empresa { display: flex; justify-content: center; align-items: center; }
+
+.inner_empresa .logo_empresa img { width: 230px; }
+
+.inner_empresa .texto_empresa h3 { color: #12397C; font-size: 20px; line-height: 19px; margin-bottom: 26px; font-family: 'Gotham Black Regular'; text-transform: uppercase; }
+
+.inner_empresa .texto_empresa p { font-size: 16px; line-height: 19px; color: #12397C; margin-bottom: 20px; }
+
+.inner_empresa .texto_empresa p:last-child { text-transform: uppercase; margin-bottom: 0; }
+
+.inner_empresa .texto_empresa a { font-family: 'Gotham Bold'; color: #12397C; font-size: 14px; margin-right: 28px; transition: .3s; }
+
+.inner_empresa .texto_empresa a:hover { color: #c81316; }
+
+.empresa_impar .circulo_left { left: 111px; bottom: 27px; }
+
+.empresa_impar .more_bottom { position: absolute; right: -30px; bottom: 30px; }
+
+.empresa_impar .circulos_h { position: absolute; top: 4px; left: 32vw; }
+
+.empresa_par .circulos_h { position: absolute; top: 4px; left: 32vw; }
+
+.empresa_par .more_left { bottom: initial; top: -29px; }
+
+.empresa_par .circulos { right: 34px; }
+
+.conforto_page .dentro_conforto .tabs_conforto .circulo_left { right: inherit; left: 99px; bottom: inherit; top: 10vh; }
+
+.conforto_page .dentro_conforto .tabs_conforto .middle_more { top: 95vh; right: 50%; transform: translateX(-50%); }
+
+.conforto_page .more_bottom { right: initial; left: -27px; bottom: 135px; }
+
+.conforto_page .more_top { bottom: initial; top: 62vh; }
+
+img.x80 { width: 80px; }
+
+.popup-sustentabilidade { position: relative; background: #FFF; padding: 20px; width: 25%; margin: 20px auto; }
+
+.sustentabilidade_item_txt { font-size: 1em; color: #000; line-height: 1.2em; }
+
+h4.small { color: #FFF !important; font-family: 'Gotham Bold'; font-size: 15px; }
+
+h4.small a { color: #FFF; }
