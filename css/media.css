@@ -261,11 +261,30 @@
   .regulamento .inner_box .dentro_regulamento h1 { font-size: 29px; letter-spacing: -0.1em; }
   .regulamento .inner_box .dentro_regulamento .lista_regulamento ul li { font-size: 13px; line-height: 13px; } }
 
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) { .text_right .premio { margin-top: 336px; }
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) { .text_right .premio { margin-top: 219px; }
   .secao_2 .right_dois .premiacoes { padding: 15px 12px; margin-top: 56px; }
   .secao_2 .right_dois p { font-size: 18px; }
   .regulamento .inner_box .dentro_regulamento .lista_regulamento ul { grid-template-rows: 60px 60px; }
   .regulamento .inner_box .dentro_regulamento .lista_regulamento ul li { height: 59px; }
-  .footer .inner_box_grey p { font-size: 14px; } }
+  .footer .inner_box_grey p { font-size: 14px; }
+  .seven { top: 55%; } }
+
+@media only screen and (device-width: 375px) and (device-height: 667px) { .mulher { left: -49vw; }
+  .seven { top: 50%; }
+  .text_right .premio { margin-top: 139px; } }
+
+@media only screen and (device-width: 414px) and (device-height: 736px) { .mulher { left: -37vw; }
+  .seven { top: 51%; }
+  .text_right .premio { margin-top: 182px; } }
+
+@media only screen and (device-width: 320px) and (device-height: 568px) { .mulher { left: -67vw; }
+  .text_right .premio { margin-top: 93px; }
+  .text_right { padding-top: 34px; }
+  .seven { top: 47%; }
+  .text_right .inscricoes { margin-top: 8px; } }
+
+@media only screen and (device-width: 360px) and (device-height: 640px) { .mulher { left: -48vw; }
+  .seven { top: 50%; }
+  .text_right .premio { margin-top: 105px; } }
 
 @media screen and (min-width: 1024px) { .categorias_home .saiba { width: 210px; position: relative; z-index: 10; margin-right: 200px; } }

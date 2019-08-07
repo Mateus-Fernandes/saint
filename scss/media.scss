@@ -1173,13 +1173,13 @@
         line-height: 13px;
     }
  }
+ // Iphone X
  @media only screen 
  and (device-width : 375px) 
  and (device-height : 812px) 
  and (-webkit-device-pixel-ratio : 3) { 
-
     .text_right .premio {
-        margin-top: 336px;
+        margin-top: 219px;
     }
     .secao_2 .right_dois .premiacoes {
         padding: 15px 12px;
@@ -1197,7 +1197,73 @@
     .footer .inner_box_grey p {
         font-size: 14px;
     }
+    .seven {
+        top: 55%;
+    }
  }
+ // Iphone 6, 7, 8
+ @media only screen 
+ and (device-width : 375px) 
+ and (device-height : 667px) { 
+    .mulher {
+        left: -49vw;
+    } 
+    .seven {
+        top: 50%;
+    }
+    .text_right .premio {
+        margin-top: 139px;
+    }
+ }
+ // Iphone 6+, 7+, 8+
+ @media only screen 
+ and (device-width : 414px) 
+ and (device-height : 736px) {
+    .mulher {
+        left: -37vw;
+    }
+    .seven {
+        top: 51%;
+    }
+    .text_right .premio {
+        margin-top: 182px;
+    }
+ }
+ // Iphone 5
+ @media only screen 
+ and (device-width : 320px) 
+ and (device-height : 568px) {
+    .mulher {
+        left: -67vw;
+    }
+    .text_right .premio {
+        margin-top: 93px;
+    }
+    .text_right {
+        padding-top: 34px;
+    }
+    .seven {
+        top: 47%;
+    }
+    .text_right .inscricoes {
+        margin-top: 8px;
+    }
+ }
+ //Moto G e Samsung em geral
+ @media only screen 
+ and (device-width : 360px) 
+ and (device-height : 640px) {
+    .mulher {
+        left: -48vw
+    }
+    .seven {
+        top: 48%;
+    }
+    .text_right .premio {
+        margin-top: 113px;
+    }
+ }
+
 
  @media screen and (min-width: 1024px){
     .categorias_home .saiba {
